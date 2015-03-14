@@ -4,7 +4,7 @@ layout: default
 ---
 
 <section id="projects">
-  <h1>Projekty ŠVT</h1>
+  <h2>Projekty ŠVT</h2>
   <ul id="projects-list">
     {% for project in site.data.projects %}
       <li>
@@ -12,21 +12,21 @@ layout: default
           <img src="project-logos/{{project.name | slugify}}.png" alt="{{project.name}} logo" />
           {{project.name}}
         </a>
-        <p>{{project.description | markdownify}}</p>
+        {{project.description | markdownify}}
       </li>
     {% endfor %}
   </ul>
 </section>
 
 <section id="members">
-  <h1>Členovia</h1>
+  <h2>Členovia</h2>
   <ul id="members-current">
     {% for name in site.data.members.current %}
       <li>{{name}}</li>
     {% endfor %}
   </ul>
 
-  <h1>Bývalí členovia</h1>
+  <h2>Bývalí členovia</h2>
   <ul id="members-past">
     {% for name in site.data.members.past %}
       <li>{{name}}</li>
