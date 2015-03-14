@@ -8,10 +8,10 @@ title: Študentský vývojový tím
     {% for project in site.data.projects %}
       <li>
         <a href="#{{project.url}}">
-          <img src="project-logos/{{project.name}}.png" alt="{{project.name}} logo" />
+          <img src="project-logos/{{project.name | slugify}}.png" alt="{{project.name}} logo" />
           {{project.name}}
         </a>
-        <p>{{project.description}}</p>
+        <p>{{project.description | markdownify}}</p>
       </li>
     {% endfor %}
   </ul>
