@@ -22,3 +22,8 @@
   url: https://github.com/fmfi-svt-gate/server/wiki
   description: Systém na odomykanie dverí pomocou RFID kariet (ISIC/ITIC).
   uses: [arm, c, python]
+
+- name: Infoboard
+  url: https://sluzby.fmph.uniba.sk/infoboard/
+  description: Informačné obrazovky a web stránka s ich obsahom
+  uses: [python, php]
