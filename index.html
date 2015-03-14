@@ -1,5 +1,6 @@
 ---
 title: Študentský vývojový tím
+layout: default
 ---
 
 <section id="projects">
@@ -7,7 +8,7 @@ title: Študentský vývojový tím
   <ul id="projects-list">
     {% for project in site.data.projects %}
       <li>
-        <a href="#{{project.url}}">
+        <a href="{{project.url}}">
           <img src="project-logos/{{project.name | slugify}}.png" alt="{{project.name}} logo" />
           {{project.name}}
         </a>
