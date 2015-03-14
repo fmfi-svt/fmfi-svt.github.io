@@ -1,0 +1,34 @@
+---
+title: Študentský vývojový tím
+---
+
+<section id="projects">
+  <h1>Projekty ŠVT</h1>
+  <ul id="projects-list">
+    {% for project in site.data.projects %}
+      <li>
+        <a href="#{{project.url}}">
+          <img src="project-logos/{{project.name}}.png" alt="{{project.name}} logo" />
+          {{project.name}}
+        </a>
+        <p>{{project.description}}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="members">
+  <h1>Členovia</h1>
+  <ul id="members-current">
+    {% for name in site.data.members.current %}
+      <li>{{name}}</li>
+    {% endfor %}
+  </ul>
+
+  <h1>Bývalí členovia</h1>
+  <ul id="members-past">
+    {% for name in site.data.members.past %}
+      <li>{{name}}</li>
+    {% endfor %}
+  </ul>
+</section>

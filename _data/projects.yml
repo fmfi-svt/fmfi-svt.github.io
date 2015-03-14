@@ -1,0 +1,20 @@
+# TODO update URLs
+# TODO decide on the format
+
+# note: description can contain markdown
+
+- name: Votr
+  url: https://votr.uniba.sk
+  description: Votr ponúka študentom jednoduchší a pohodlnejší spôsob, ako robiť najčastejšie činnosti zo systému AIS. Zapíšte sa na skúšky, prezrite si vaše hodnotenia a skontrolujte si počet kreditov bez zbytočného klikania.
+
+- name: Candle
+  url: https://candle.fmph.uniba.sk/
+  description: Prehľadný interaktívny rozvrh hodín.
+
+- name: Anketa
+  url: https://anketa.uniba.sk/
+  description: Študentská anketa UK. Prezentuj svoj názor!
+
+- name: Gate
+  url: https://github.com/fmfi-svt-gate/server/wiki
+  description: Systém na odomykanie dverí pomocou RFID kariet (ISIC/ITIC)
