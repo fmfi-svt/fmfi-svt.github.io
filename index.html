@@ -13,6 +13,14 @@ layout: default
           {{project.name}}
         </a>
         {{project.description | markdownify}}
+
+        <ul class="project-uses">
+          {% for tagname in project.uses %}
+            {% assign tag = site.data.uses_tags[tagname] %}
+            <li><a title="{{tagname}}" href="{{tag.url}}"><img alt="{{tagname}}" src="{{tag.icon}}" /></a></li>
+          {% endfor %}
+        </ul>
+
       </li>
     {% endfor %}
   </ul>
