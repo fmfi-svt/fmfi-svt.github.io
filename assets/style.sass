@@ -9,9 +9,11 @@
 
 $primary-color:   #005200
 $secondary-color: #3daa3d
-$accent-color:    #8f0000
+$accent-color:    #c20000
 
 $content-width: 47em
+
+/// Site-wide (header, footer, ...) ///////////
 
 body
   margin: 0
@@ -22,7 +24,7 @@ body
   background: $secondary-color
   border: 0 solid $primary-color
   border-width: 6px 0
-  margin-top: 80px
+  margin: 80px 0 60px
 
 #header-sitewide-content, #content
   max-width: $content-width
@@ -53,10 +55,39 @@ body
 
 #header-logo-img
   position: relative
-  top: 45px
+  top: 47px
 
 #footer-sitewide
   background: $primary-color
   color: $secondary-color
   text-align: center
   padding: 0.5em 0 0.36em
+
+#content section
+  margin: 2em 0
+
+/// Typography and stuff //////////////////////
+
+#content h2
+  color: $secondary-color
+
+a.button
+  display: inline-block
+  padding: 4px 1em
+  margin: 0 1em
+  text-decoration: none
+  background: $primary-color
+  color: #fff
+  +vendor-prefix(border-radius, 6px)
+
+  &.accent
+    background: $accent-color
+    &:hover
+      background: lighten($accent-color, 10%)
+
+/// Homepage //////////////////////////////////
+
+section#join-us
+  font-size: 1.4em
+  color: $primary-color
+  text-align: right
