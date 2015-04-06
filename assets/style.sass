@@ -1,17 +1,62 @@
 ---
 ---
 
-= vendor-prefix($name, $argument)
+=vendor-prefix($name, $argument)
   -webkit-#{$name}: #{$argument}
   -moz-#{$name}: #{$argument}
   -o-#{$name}: #{$argument}
   #{$name}: #{$argument}
 
-.project-uses
-  list-style: none
-  li
-    display: inline
-    a
-      text-decoration: none
-      img
-        width: 16px
+$primary-color:   #005200
+$secondary-color: #3daa3d
+$accent-color:    #8f0000
+
+$content-width: 47em
+
+body
+  margin: 0
+  padding: 0
+  font-family: sans-serif // TODO
+
+#header-sitewide
+  background: $secondary-color
+  border: 0 solid $primary-color
+  border-width: 6px 0
+  margin-top: 80px
+
+#header-sitewide-content, #content
+  max-width: $content-width
+  margin: 0 auto
+  position: relative
+
+#header-title
+  position: absolute
+  top: 50%
+  right: 0
+  margin: -2.2em 0
+  text-transform: uppercase
+  color: #fff
+  h1, h2
+    margin: 0
+    font-size: 2.1em
+  h2
+    font-weight: normal
+
+#header-logo
+  height: 238px
+  width:  238px
+  margin: -64px 0
+  background: #fff
+  border: 6px solid $primary-color
+  +vendor-prefix(border-radius, 50%)
+  text-align: center
+
+#header-logo-img
+  position: relative
+  top: 45px
+
+#footer-sitewide
+  background: $primary-color
+  color: $secondary-color
+  text-align: center
+  padding: 0.5em 0 0.36em
