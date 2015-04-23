@@ -64,6 +64,7 @@ body
   color: #fff
   text-align: center
   padding: 0.4em 0 0.36em
+  clear: both
 
 #content section
   margin: 2em 0
@@ -76,7 +77,7 @@ body
 a.button
   display: inline-block
   padding: 2px 0.8em 4px
-  margin: 0 0.8em
+  margin: 0 0 0 0.8em
   text-decoration: none
   background: $primary-color
   color: #fff
@@ -93,3 +94,26 @@ section#join-us
   font-size: 1.4em
   color: $primary-color
   text-align: right
+
+section#projects
+  width: 60%
+  float: left
+  padding-right: 5%
+  border-right: 1px solid $primary-color
+
+  a
+    font-size: 0.8em
+
+section#members
+  width: 30%
+  float: right
+
+section#projects,
+section#members
+  h2:first-child
+    margin-top: -0.2em
+
+  ul
+    margin-left: 0
+    padding-left: 0
+    list-style: none
