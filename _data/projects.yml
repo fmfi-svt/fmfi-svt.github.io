@@ -18,8 +18,8 @@
   description: Študentská anketa UK. Prezentuj svoj názor!
   uses: [php, symfony]
 
-- name: Gate
-  url: https://github.com/fmfi-svt-gate/server/wiki
+- name: Deadlock
+  url: https://github.com/fmfi-svt-deadlock/server/wiki
   description: Systém na odomykanie dverí pomocou RFID kariet (ISIC/ITIC).
   uses: [arm, c, python]
 
