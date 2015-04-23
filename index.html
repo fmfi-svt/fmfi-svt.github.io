@@ -17,18 +17,10 @@ layout: default
   <ul id="projects-list">
     {% for project in site.data.projects %}
       <li>
-        <h3><img src="project-logos/{{project.name | slugify}}.png" alt="{{project.name}} logo" />{{project.name}}</h3>
+        <h3>{{project.name}}</h3>
         {% if project.project_url %}<a class="project_url" href="{{project.project_url}}">{{project.project_url}}</a>{% endif %}
         {% if project.prod_url    %}<a class="prod_url"    href="{{project.prod_url   }}">{{project.prod_url}}</a>{% endif %}
         {{project.description | markdownify}}
-
-        <ul class="project-uses">
-          {% for tagname in project.uses %}
-            {% assign tag = site.data.uses_tags[tagname] %}
-            <li><a title="{{tagname}}" href="{{tag.url}}"><img alt="{{tagname}}" src="{{tag.icon}}" /></a></li>
-          {% endfor %}
-        </ul>
-
       </li>
     {% endfor %}
   </ul>
