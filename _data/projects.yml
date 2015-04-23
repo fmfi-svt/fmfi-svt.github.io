@@ -1,29 +1,29 @@
-# TODO update URLs
-# TODO decide on the format
-
 # note: description can contain markdown
 
 - name: Votr
-  url: https://votr.uniba.sk
+  project_url: https://github.com/fmfi-svt/votr
+  prod_url: https://votr.uniba.sk
   description: Votr ponúka študentom jednoduchší a pohodlnejší spôsob, ako robiť najčastejšie činnosti zo systému AIS. Zapíšte sa na skúšky, prezrite si vaše hodnotenia a skontrolujte si počet kreditov bez zbytočného klikania.
   uses: [python, werkzeug]
 
 - name: Candle
-  url: https://candle.fmph.uniba.sk/
+  project_url: https://github.com/fmfi-svt/candle
+  prod_url: https://candle.fmph.uniba.sk/
   description: Prehľadný interaktívny rozvrh hodín.
   uses: [php, symfony]
 
 - name: Anketa
-  url: https://anketa.uniba.sk/
+  project_url: https://code.google.com/p/fmfi-anketa/
+  prod_url: https://anketa.uniba.sk/
   description: Študentská anketa UK. Prezentuj svoj názor!
   uses: [php, symfony]
 
 - name: Deadlock
-  url: https://github.com/fmfi-svt-deadlock/server/wiki
+  project_url: https://github.com/fmfi-svt-deadlock/server/wiki
   description: Systém na odomykanie dverí pomocou RFID kariet (ISIC/ITIC).
   uses: [arm, c, python]
 
 - name: Infoboard
-  url: https://sluzby.fmph.uniba.sk/infoboard/
+  prod_url: https://sluzby.fmph.uniba.sk/infoboard/
   description: Informačné obrazovky a web stránka s ich obsahom
   uses: [python, php]
