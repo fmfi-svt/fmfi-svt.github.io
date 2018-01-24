@@ -11,9 +11,14 @@
   description: Prehľadný interaktívny rozvrh hodín.
 
 - name: Anketa
-  project_url: https://code.google.com/p/fmfi-anketa/
+  project_url: https://github.com/fmfi-svt/anketa
   prod_url: https://anketa.uniba.sk/
   description: Študentská anketa UK. Prezentuj svoj názor!
+
+- name: ePrihlaska
+  project_url: https://github.com/fmfi-svt/eprihlaska
+  prod_url: https://prihlaska.fmph.uniba.sk/
+  description: Podanie prihlášky na FMFI UK jednoducho, rýchlo a bez papierov.
 
 - name: Deadlock
   project_url: https://github.com/fmfi-svt-deadlock/server/wiki
